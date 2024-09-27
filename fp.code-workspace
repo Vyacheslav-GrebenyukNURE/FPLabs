@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "example 2"
+		},
+		{
+			"path": "recfun 2"
+		},
+		{
+			"path": "funsets 2"
+		},
+		{
+			"path": "objsets 2"
+		},
+		{
+			"path": "patmat 2"
+		},
+		{
+			"path": "forcomp 2"
+		}
+	],
+	"settings": {
+		"files.watcherExclude": {
+			"**/target": true
+		},
+		"metals.inlayHints.implicitArguments.enable": true,
+		"metals.inlayHints.implicitConversions.enable": true
+	}
+}
