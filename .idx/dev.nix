@@ -27,7 +27,7 @@
         "scalameta.metals"
         "streetsidesoftware.code-spell-checker-ukrainian"
         "equinusocio.vsc-material-theme-icons"
-      # "vscodevim.vim"
+        "alssys.interactive-scala"
     ];
 
     # Enable previews
