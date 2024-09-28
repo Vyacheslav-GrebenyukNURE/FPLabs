@@ -18,14 +18,14 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
-        "aaron-bond.better-comments",
-        "streetsidesoftware.code-spell-checker",
-        "janisdd.vscode-edit-csv",
-        "IgorSbitnev.error-gutters",
-        "usernamehw.errorlens",
-        "sdras.night-owl",
-        "scalameta.metals",
-        "streetsidesoftware.code-spell-checker-ukrainian",
+        "aaron-bond.better-comments"
+        "streetsidesoftware.code-spell-checker"
+        "janisdd.vscode-edit-csv"
+        "IgorSbitnev.error-gutters"
+        "usernamehw.errorlens"
+        "sdras.night-owl"
+        "scalameta.metals"
+        "streetsidesoftware.code-spell-checker-ukrainian"
         "equinusocio.vsc-material-theme-icons"
       # "vscodevim.vim"
     ];
