@@ -2,13 +2,13 @@
 # see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
-  channel = "stable-23.11"; # or "unstable"
+  channel = "stable-24.05"; # or "unstable"
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.jdk17
-    (pkgs.scala_3.override { jre = pkgs.jdk17; })
-    (pkgs.sbt.override { jre = pkgs.jdk17; })
+    pkgs.jdk21
+    (pkgs.scala_3.override { jre = pkgs.jdk21; })
+    (pkgs.sbt.override { jre = pkgs.jdk21; })
     # pkgs.python311Packages.pip
     # pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
