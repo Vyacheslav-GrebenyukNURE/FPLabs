@@ -6,6 +6,7 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    pkgs.zulu17
     pkgs.scala_3
     pkgs.sbt
     # pkgs.python311Packages.pip
