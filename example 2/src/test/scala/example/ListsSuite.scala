@@ -21,7 +21,7 @@ class ListsSuite extends munit.FunSuite:
   }
 
   test("one plus one is three (0pts)?") {
-    assert(1 + 1 == 3) // This assertion fails! Go ahead and fix it.
+    assert(!(1 + 1 == 3)) // This assertion fails! Go ahead and fix it.
   }
 
   /**
@@ -57,7 +57,7 @@ class ListsSuite extends munit.FunSuite:
    * when writing tests.
    */
   test("details why one plus one is not three (0pts)") {
-    assertEquals(1 + 1, 3) // Fix me, please!
+    assertNotEquals(1 + 1, 3) // Fix me, please!
   }
 
   /**
@@ -102,9 +102,22 @@ class ListsSuite extends munit.FunSuite:
     assert(sum(List(1,2,0)) == 3)
   }
 
+  test("sum of empty list (10pts)") {
+    assert(sum(List[Int]()) == 0)
+  }
+
   test("max of a few numbers (10pts)") {
     assert(max(List(3, 7, 2)) == 7)
   }
+
+  test("max on empty list throws exception") {
+    try
+      max(Nil)
+      fail("No exception has been thrown")
+    catch
+      case e: NoSuchElementException => ()
+  }
+
 
 
 

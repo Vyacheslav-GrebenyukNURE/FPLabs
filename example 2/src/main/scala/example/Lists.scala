@@ -1,6 +1,10 @@
 package example
+@main def run(): Unit =
+  println(Lists.sum(List(1,2)))
 
-object Lists:
+object Lists extends App:
+  // def main(args: Array[String]): Unit = 
+  println(Lists.sum(List(1,2)))
 
   /**
    * This method computes the sum of all elements in the list xs. There are
@@ -22,7 +26,10 @@ object Lists:
    * @param xs A list of natural numbers
    * @return The sum of all elements in `xs`
    */
-  def sum(xs: List[Int]): Int = ???
+  def sum(xs: List[Int]): Int =
+    // xs.sum
+    // xs.foldLeft(0)(_ + _)
+    if xs.isEmpty then 0 else xs.head + sum(xs.tail)
 
   /**
    * This method returns the largest element in a list of integers. If the
@@ -37,4 +44,9 @@ object Lists:
    * @return The largest element in `xs`
    * @throws java.util.NoSuchElementException if `xs` is an empty list
    */
-  def max(xs: List[Int]): Int = ???
+  def max(xs: List[Int]): Int =
+    // xs.max
+    def auxiliary(ys: List[Int], m: Int): Int =
+      if ys.isEmpty then m else 
+        auxiliary(ys.tail, if m < ys.head then ys.head else m)
+    auxiliary(xs, xs.head)
